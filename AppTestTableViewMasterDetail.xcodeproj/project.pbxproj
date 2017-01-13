@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		09D1A2171E294FE300C090A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1A2161E294FE300C090A5 /* AppDelegate.swift */; };
-		09D1A2191E294FE300C090A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1A2181E294FE300C090A5 /* ViewController.swift */; };
 		09D1A21C1E294FE300C090A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D1A21A1E294FE300C090A5 /* Main.storyboard */; };
 		09D1A21E1E294FE300C090A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D1A21D1E294FE300C090A5 /* Assets.xcassets */; };
 		09D1A2211E294FE300C090A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D1A21F1E294FE300C090A5 /* LaunchScreen.storyboard */; };
+		09D1A2291E29564300C090A5 /* CICListaContactosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1A2281E29564300C090A5 /* CICListaContactosTableViewController.swift */; };
+		09D1A22B1E29566300C090A5 /* CICDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1A22A1E29566300C090A5 /* CICDetalleViewController.swift */; };
+		09D1A22D1E2956AE00C090A5 /* CICContactosCustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1A22C1E2956AE00C090A5 /* CICContactosCustomCellTableViewCell.swift */; };
+		09D1A2311E29599100C090A5 /* Contactos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09D1A2301E29599100C090A5 /* Contactos.plist */; };
+		09D1A2341E295BA800C090A5 /* BO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09D1A2321E295BA800C090A5 /* BO.jpg */; };
+		09D1A2351E295BA800C090A5 /* TS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 09D1A2331E295BA800C090A5 /* TS.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09D1A2131E294FE300C090A5 /* AppTestTableViewMasterDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTestTableViewMasterDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D1A2161E294FE300C090A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		09D1A2181E294FE300C090A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		09D1A21B1E294FE300C090A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09D1A21D1E294FE300C090A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09D1A2201E294FE300C090A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09D1A2221E294FE300C090A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D1A2281E29564300C090A5 /* CICListaContactosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CICListaContactosTableViewController.swift; sourceTree = "<group>"; };
+		09D1A22A1E29566300C090A5 /* CICDetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CICDetalleViewController.swift; sourceTree = "<group>"; };
+		09D1A22C1E2956AE00C090A5 /* CICContactosCustomCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CICContactosCustomCellTableViewCell.swift; sourceTree = "<group>"; };
+		09D1A2301E29599100C090A5 /* Contactos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Contactos.plist; sourceTree = "<group>"; };
+		09D1A2321E295BA800C090A5 /* BO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BO.jpg; sourceTree = "<group>"; };
+		09D1A2331E295BA800C090A5 /* TS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TS.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,43 @@
 		09D1A2151E294FE300C090A5 /* AppTestTableViewMasterDetail */ = {
 			isa = PBXGroup;
 			children = (
+				09D1A2361E295BB000C090A5 /* IMAGES */,
 				09D1A2161E294FE300C090A5 /* AppDelegate.swift */,
-				09D1A2181E294FE300C090A5 /* ViewController.swift */,
+				09D1A22E1E2956B600C090A5 /* VIEWS_Controllers */,
 				09D1A21A1E294FE300C090A5 /* Main.storyboard */,
 				09D1A21D1E294FE300C090A5 /* Assets.xcassets */,
 				09D1A21F1E294FE300C090A5 /* LaunchScreen.storyboard */,
 				09D1A2221E294FE300C090A5 /* Info.plist */,
+				09D1A2301E29599100C090A5 /* Contactos.plist */,
 			);
 			path = AppTestTableViewMasterDetail;
+			sourceTree = "<group>";
+		};
+		09D1A22E1E2956B600C090A5 /* VIEWS_Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				09D1A2281E29564300C090A5 /* CICListaContactosTableViewController.swift */,
+				09D1A22A1E29566300C090A5 /* CICDetalleViewController.swift */,
+				09D1A22F1E2956D100C090A5 /* CUSTOMS_Cells */,
+			);
+			name = VIEWS_Controllers;
+			sourceTree = "<group>";
+		};
+		09D1A22F1E2956D100C090A5 /* CUSTOMS_Cells */ = {
+			isa = PBXGroup;
+			children = (
+				09D1A22C1E2956AE00C090A5 /* CICContactosCustomCellTableViewCell.swift */,
+			);
+			name = CUSTOMS_Cells;
+			sourceTree = "<group>";
+		};
+		09D1A2361E295BB000C090A5 /* IMAGES */ = {
+			isa = PBXGroup;
+			children = (
+				09D1A2321E295BA800C090A5 /* BO.jpg */,
+				09D1A2331E295BA800C090A5 /* TS.jpg */,
+			);
+			name = IMAGES;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +162,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D1A2341E295BA800C090A5 /* BO.jpg in Resources */,
 				09D1A2211E294FE300C090A5 /* LaunchScreen.storyboard in Resources */,
 				09D1A21E1E294FE300C090A5 /* Assets.xcassets in Resources */,
 				09D1A21C1E294FE300C090A5 /* Main.storyboard in Resources */,
+				09D1A2351E295BA800C090A5 /* TS.jpg in Resources */,
+				09D1A2311E29599100C090A5 /* Contactos.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09D1A2191E294FE300C090A5 /* ViewController.swift in Sources */,
+				09D1A2291E29564300C090A5 /* CICListaContactosTableViewController.swift in Sources */,
 				09D1A2171E294FE300C090A5 /* AppDelegate.swift in Sources */,
+				09D1A22B1E29566300C090A5 /* CICDetalleViewController.swift in Sources */,
+				09D1A22D1E2956AE00C090A5 /* CICContactosCustomCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>nombre</key>
+		<string>Taylor</string>
+		<key>apellido</key>
+		<string>Swift</string>
+		<key>telefono</key>
+		<string>+34 655 566 666</string>
+		<key>email</key>
+		<string>email@email.com</string>
+		<key>biografia</key>
+		<string>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </string>
+		<key>fijo</key>
+		<string>911 111 333</string>
+		<key>direccion</key>
+		<string>Calle Povedilla 4</string>
+		<key>ciudad</key>
+		<string>Madrid</string>
+		<key>estado</key>
+		<string>Soltera</string>
+		<key>imagen</key>
+		<string>TS.jpg</string>
+	</dict>
+</array>
+</plist>
