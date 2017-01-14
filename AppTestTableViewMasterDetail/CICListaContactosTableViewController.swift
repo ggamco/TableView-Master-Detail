@@ -10,14 +10,24 @@ import UIKit
 
 class CICListaContactosTableViewController: UITableViewController {
 
+    //MARK: - Variables
+    var contactosArray: [[String : String]] = []
+    var contactosArrayDos: [[String : String]] = []
+    var contactosArrayTres: [[String : String]] = []
+    var contactosDiccionario: [String : String] = [:]
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        let rutaFichero = Bundle.main.path(forResource: "Contactos", ofType: "plist")
+        contactosArray = NSArray(contentsOfFile: rutaFichero!)! as! [[String : String]]
+        contactosArrayDos = NSArray(contentsOfFile: rutaFichero!)! as! [[String : String]]
+        contactosArrayTres = NSArray(contentsOfFile: rutaFichero!)! as! [[String : String]]
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,23 +39,73 @@ class CICListaContactosTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        var numeroContatos = 0
+        
+        if section == 0 {
+            numeroContatos = contactosArray.count
+        }else if section == 1{
+            numeroContatos = contactosArrayDos.count
+        }else{
+            numeroContatos = contactosArrayTres.count
+        }
+        
+        return numeroContatos
     }
 
-    /*
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        var tituloSeccion = ""
+        
+        if section == 0 {
+            tituloSeccion = "Contactos Familia"
+        }else if section == 1{
+            tituloSeccion = "Contactos Amigos"
+        }else{
+            tituloSeccion = "Contactos Trabajo"
+        }
+        
+        return tituloSeccion
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CeldaUno", for: indexPath)  as! CICContactosCustomCellTableViewCell
+        
+        if indexPath.section == 0{
+            contactosDiccionario = contactosArray[indexPath.row]
+            cell.myNombreLabel.text = contactosDiccionario["nombre"]
+            cell.myApellidoLabel.text = contactosDiccionario["apellido"]
+            cell.myTelefonoLabel.text = contactosDiccionario["telefono"]
+        }else if indexPath.section == 1{
+            contactosDiccionario = contactosArrayDos[indexPath.row]
+            cell.myNombreLabel.text = contactosDiccionario["nombre"]
+            cell.myApellidoLabel.text = contactosDiccionario["apellido"]
+        }else{
+            contactosDiccionario = contactosArrayTres[indexPath.row]
+            cell.myNombreLabel.text = (contactosDiccionario["nombre"]! + " " + contactosDiccionario["apellido"]!)
+        }
+        
+        let imageCustom = UIImage(named: contactosDiccionario["imagen"]!)
+        cell.myImagenContacto.image = imageCustom
+        
 
         return cell
     }
-    */
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let ventanaDetalleVC = self.storyboard?.instantiateViewController(withIdentifier: "DetalleViewController") as! CICDetalleViewController
+        
+        ventanaDetalleVC.detalleData = contactosArray[indexPath.row]
+        
+        self.navigationController?.pushViewController(ventanaDetalleVC, animated: true)
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.

@@ -4,31 +4,9 @@
 <array>
 	<dict>
 		<key>nombre</key>
-		<string>Taylor</string>
+		<string>Martin</string>
 		<key>apellido</key>
-		<string>Swift</string>
-		<key>telefono</key>
-		<string>+34 655 566 666</string>
-		<key>email</key>
-		<string>email@email.com</string>
-		<key>biografia</key>
-		<string>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</string>
-		<key>fijo</key>
-		<string>911 111 333</string>
-		<key>direccion</key>
-		<string>Calle Povedilla 4</string>
-		<key>ciudad</key>
-		<string>Madrid</string>
-		<key>estado</key>
-		<string>Soltera</string>
-		<key>imagen</key>
-		<string>TS.jpg</string>
-	</dict>
-	<dict>
-		<key>nombre</key>
-		<string>Barac</string>
-		<key>apellido</key>
-		<string>Obama</string>
+		<string>Berasategui</string>
 		<key>telefono</key>
 		<string>+34 655 566 666</string>
 		<key>email</key>
@@ -45,6 +23,28 @@
 		<string>Casado</string>
 		<key>imagen</key>
 		<string>BO.jpg</string>
+	</dict>
+	<dict>
+		<key>nombre</key>
+		<string>Ivan</string>
+		<key>apellido</key>
+		<string>De la Peña</string>
+		<key>telefono</key>
+		<string>+34 655 566 666</string>
+		<key>email</key>
+		<string>email@email.com</string>
+		<key>biografia</key>
+		<string>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</string>
+		<key>fijo</key>
+		<string>911 111 333</string>
+		<key>direccion</key>
+		<string>Calle Povedilla 4</string>
+		<key>ciudad</key>
+		<string>Madrid</string>
+		<key>estado</key>
+		<string>Soltera</string>
+		<key>imagen</key>
+		<string>IP.jpg</string>
 	</dict>
 </array>
 </plist>

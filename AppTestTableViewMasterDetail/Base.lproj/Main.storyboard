@@ -33,7 +33,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JiB-lZ-26S">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telefono.png" translatesAutoresizingMaskIntoConstraints="NO" id="JiB-lZ-26S">
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="DOf-9i-TE7"/>
                                                 <constraint firstAttribute="width" constant="30" id="jWK-Pw-FO4"/>
@@ -44,7 +44,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dke-h1-Sbh">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dke-h1-Sbh">
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="100" id="WeP-Nq-ctm"/>
                                             </constraints>
@@ -77,6 +77,69 @@
                                     <outlet property="myTelefonoLabel" destination="o5a-BI-286" id="MMf-RY-aw4"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CeldaDos" rowHeight="76" id="r5K-Fo-Krb" customClass="CICContactosCustomCellTableViewCell" customModule="AppTestTableViewMasterDetail" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="217" width="320" height="76"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r5K-Fo-Krb" id="rxj-QH-odS">
+                                    <frame key="frameInset" width="320" height="75"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wop-yy-wbk">
+                                            <frame key="frameInset" minX="76" minY="8" width="236" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kA6-xM-X3T">
+                                            <frame key="frameInset" minX="8" minY="8" width="60" height="60"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apellidos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Tw-kz-694">
+                                            <frame key="frameInset" minX="76" minY="38" width="236" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="myApellido" destination="7Tw-kz-694" id="h5H-wi-oAE"/>
+                                    <outlet property="myApellidoLabel" destination="7Tw-kz-694" id="NRb-wP-DXJ"/>
+                                    <outlet property="myImagen" destination="kA6-xM-X3T" id="2Jr-3N-98A"/>
+                                    <outlet property="myImagenContacto" destination="kA6-xM-X3T" id="6RU-qv-xZa"/>
+                                    <outlet property="myNombre" destination="Wop-yy-wbk" id="fo4-sB-pBD"/>
+                                    <outlet property="myNombreLabel" destination="Wop-yy-wbk" id="lb6-fF-AJ0"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CeldaTres" rowHeight="140" id="LS3-KZ-sUQ" customClass="CICContactosCustomCellTableViewCell" customModule="AppTestTableViewMasterDetail" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="293" width="320" height="140"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LS3-KZ-sUQ" id="U6h-bT-QzE">
+                                    <frame key="frameInset" width="320" height="139"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre Completo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjT-Y3-EN6">
+                                            <frame key="frameInset" minX="8" minY="101" width="304" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RQy-0E-wSe">
+                                            <frame key="frameInset" minX="120" minY="8" width="80" height="80"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="myImagen" destination="RQy-0E-wSe" id="cmD-z9-ts5"/>
+                                    <outlet property="myImagenContacto" destination="RQy-0E-wSe" id="jaP-Ug-kwb"/>
+                                    <outlet property="myNombreCompleto" destination="sjT-Y3-EN6" id="bVC-3C-sQ1"/>
+                                    <outlet property="myNombreLabel" destination="sjT-Y3-EN6" id="g2Y-cC-2dL"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="JNo-xG-mHE" id="Y79-Gh-cDW"/>
@@ -92,7 +155,7 @@
         <!--Detalle View Controller-->
         <scene sceneID="nRj-r9-CX1">
             <objects>
-                <viewController id="vfy-ie-EBh" customClass="CICDetalleViewController" customModule="AppTestTableViewMasterDetail" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetalleViewController" id="vfy-ie-EBh" customClass="CICDetalleViewController" customModule="AppTestTableViewMasterDetail" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jXr-Vm-iCT"/>
                         <viewControllerLayoutGuide type="bottom" id="lgw-RU-ajF"/>
@@ -103,7 +166,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRS-wy-GON">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="27I-w5-RPM">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="telefono.png" translatesAutoresizingMaskIntoConstraints="NO" id="27I-w5-RPM">
                                         <frame key="frameInset" minX="20" minY="472" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -121,7 +184,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9oI-Au-z3a">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="telefono.png" translatesAutoresizingMaskIntoConstraints="NO" id="9oI-Au-z3a">
                                         <frame key="frameInset" minX="20" minY="320" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -132,7 +195,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OND-AT-DkR">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="telefono.png" translatesAutoresizingMaskIntoConstraints="NO" id="OND-AT-DkR">
                                         <frame key="frameInset" minX="20" minY="358" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -143,11 +206,11 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Jb-Zm-Jnl">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="telefono.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Jb-Zm-Jnl">
                                         <frame key="frameInset" minX="20" minY="434" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JWP-EB-uRk">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="telefono.png" translatesAutoresizingMaskIntoConstraints="NO" id="JWP-EB-uRk">
                                         <frame key="frameInset" minX="20" minY="396" width="30" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -158,7 +221,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aX9-fr-5xQ">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aX9-fr-5xQ">
                                         <frame key="frameInset" minX="89" minY="20" width="150" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -183,11 +246,22 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="rRS-wy-GON" firstAttribute="centerY" secondItem="XPj-Le-HHX" secondAttribute="centerY" id="6Pt-S2-aau"/>
                             <constraint firstItem="rRS-wy-GON" firstAttribute="centerX" secondItem="XPj-Le-HHX" secondAttribute="centerX" id="VEi-It-h2O"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myBiografia" destination="mkR-j0-Nda" id="hIH-A8-fhv"/>
+                        <outlet property="myCiudad" destination="v3s-4D-thW" id="vMn-Mq-v8i"/>
+                        <outlet property="myDireccion" destination="cYi-Tg-RRC" id="hFp-Of-uNG"/>
+                        <outlet property="myEmail" destination="HDj-vp-I8g" id="rIz-xF-42M"/>
+                        <outlet property="myEstado" destination="exW-iW-pTu" id="sSJ-5S-zca"/>
+                        <outlet property="myImagenContacto" destination="aX9-fr-5xQ" id="EA0-4b-KxN"/>
+                        <outlet property="myNombreCompleto" destination="qUj-kA-TQC" id="DZW-XN-xFb"/>
+                        <outlet property="myTelefono" destination="fmO-sJ-hOw" id="VZn-xN-E7v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mwa-1A-TEH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -212,4 +286,7 @@
             <point key="canvasLocation" x="-279.19999999999999" y="104.7976011994003"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="telefono.png" width="600" height="600"/>
+    </resources>
 </document>

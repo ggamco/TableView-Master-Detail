@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0910BD5E1E296629006B25AE /* telefono.png in Resources */ = {isa = PBXBuildFile; fileRef = 0910BD5D1E296629006B25AE /* telefono.png */; };
+		0910BD601E296EED006B25AE /* ContactosDos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0910BD5F1E296EED006B25AE /* ContactosDos.plist */; };
+		0910BD631E2970F7006B25AE /* IP.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0910BD611E2970F7006B25AE /* IP.jpg */; };
+		0910BD641E2970F7006B25AE /* MB.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0910BD621E2970F7006B25AE /* MB.jpg */; };
+		0910BD661E2972AC006B25AE /* CICContactosCustomCellTres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910BD651E2972AC006B25AE /* CICContactosCustomCellTres.swift */; };
+		0910BD681E297374006B25AE /* CICContactosCustomCellDos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0910BD671E297374006B25AE /* CICContactosCustomCellDos.swift */; };
 		09D1A2171E294FE300C090A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D1A2161E294FE300C090A5 /* AppDelegate.swift */; };
 		09D1A21C1E294FE300C090A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D1A21A1E294FE300C090A5 /* Main.storyboard */; };
 		09D1A21E1E294FE300C090A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D1A21D1E294FE300C090A5 /* Assets.xcassets */; };
@@ -20,6 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0910BD5D1E296629006B25AE /* telefono.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = telefono.png; sourceTree = "<group>"; };
+		0910BD5F1E296EED006B25AE /* ContactosDos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ContactosDos.plist; sourceTree = "<group>"; };
+		0910BD611E2970F7006B25AE /* IP.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IP.jpg; sourceTree = "<group>"; };
+		0910BD621E2970F7006B25AE /* MB.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MB.jpg; sourceTree = "<group>"; };
+		0910BD651E2972AC006B25AE /* CICContactosCustomCellTres.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CICContactosCustomCellTres.swift; sourceTree = "<group>"; };
+		0910BD671E297374006B25AE /* CICContactosCustomCellDos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CICContactosCustomCellDos.swift; sourceTree = "<group>"; };
 		09D1A2131E294FE300C090A5 /* AppTestTableViewMasterDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTestTableViewMasterDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D1A2161E294FE300C090A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09D1A21B1E294FE300C090A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +84,7 @@
 				09D1A21F1E294FE300C090A5 /* LaunchScreen.storyboard */,
 				09D1A2221E294FE300C090A5 /* Info.plist */,
 				09D1A2301E29599100C090A5 /* Contactos.plist */,
+				0910BD5F1E296EED006B25AE /* ContactosDos.plist */,
 			);
 			path = AppTestTableViewMasterDetail;
 			sourceTree = "<group>";
@@ -90,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				09D1A22C1E2956AE00C090A5 /* CICContactosCustomCellTableViewCell.swift */,
+				0910BD671E297374006B25AE /* CICContactosCustomCellDos.swift */,
+				0910BD651E2972AC006B25AE /* CICContactosCustomCellTres.swift */,
 			);
 			name = CUSTOMS_Cells;
 			sourceTree = "<group>";
@@ -99,6 +114,9 @@
 			children = (
 				09D1A2321E295BA800C090A5 /* BO.jpg */,
 				09D1A2331E295BA800C090A5 /* TS.jpg */,
+				0910BD611E2970F7006B25AE /* IP.jpg */,
+				0910BD621E2970F7006B25AE /* MB.jpg */,
+				0910BD5D1E296629006B25AE /* telefono.png */,
 			);
 			name = IMAGES;
 			sourceTree = "<group>";
@@ -135,6 +153,7 @@
 				TargetAttributes = {
 					09D1A2121E294FE300C090A5 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = X85M3GJSM3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -162,10 +181,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0910BD641E2970F7006B25AE /* MB.jpg in Resources */,
+				0910BD601E296EED006B25AE /* ContactosDos.plist in Resources */,
 				09D1A2341E295BA800C090A5 /* BO.jpg in Resources */,
 				09D1A2211E294FE300C090A5 /* LaunchScreen.storyboard in Resources */,
 				09D1A21E1E294FE300C090A5 /* Assets.xcassets in Resources */,
 				09D1A21C1E294FE300C090A5 /* Main.storyboard in Resources */,
+				0910BD631E2970F7006B25AE /* IP.jpg in Resources */,
+				0910BD5E1E296629006B25AE /* telefono.png in Resources */,
 				09D1A2351E295BA800C090A5 /* TS.jpg in Resources */,
 				09D1A2311E29599100C090A5 /* Contactos.plist in Resources */,
 			);
@@ -178,9 +201,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0910BD661E2972AC006B25AE /* CICContactosCustomCellTres.swift in Sources */,
 				09D1A2291E29564300C090A5 /* CICListaContactosTableViewController.swift in Sources */,
 				09D1A2171E294FE300C090A5 /* AppDelegate.swift in Sources */,
 				09D1A22B1E29566300C090A5 /* CICDetalleViewController.swift in Sources */,
+				0910BD681E297374006B25AE /* CICContactosCustomCellDos.swift in Sources */,
 				09D1A22D1E2956AE00C090A5 /* CICContactosCustomCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X85M3GJSM3;
 				INFOPLIST_FILE = AppTestTableViewMasterDetail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cice.gmbdesigns.ios.AppTestTableViewMasterDetail;
@@ -314,6 +340,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X85M3GJSM3;
 				INFOPLIST_FILE = AppTestTableViewMasterDetail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cice.gmbdesigns.ios.AppTestTableViewMasterDetail;
@@ -341,6 +368,7 @@
 				09D1A2271E294FE300C090A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,9 +10,34 @@ import UIKit
 
 class CICDetalleViewController: UIViewController {
 
+    //MARK: - Variables locales
+    var detalleData: [String : String] = [:]
+    
+    //MARK: - IBOutlets
+    @IBOutlet weak var myImagenContacto: UIImageView!
+    @IBOutlet weak var myNombreCompleto: UILabel!
+    @IBOutlet weak var myBiografia: UILabel!
+    @IBOutlet weak var myEmail: UILabel!
+    @IBOutlet weak var myTelefono: UILabel!
+    @IBOutlet weak var myDireccion: UILabel!
+    @IBOutlet weak var myCiudad: UILabel!
+    @IBOutlet weak var myEstado: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        myNombreCompleto.text = (detalleData["nombre"]! + " " + detalleData["apellido"]!)
+        myEmail.text = detalleData["email"]
+        myBiografia.text = detalleData["biografia"]
+        myTelefono.text = detalleData["telefono"]
+        myDireccion.text = detalleData["direccion"]
+        myCiudad.text = detalleData["ciudad"]
+        myEstado.text = detalleData["estado"]
+        
+        let imagenContacto = UIImage(named: detalleData["imagen"]!)
+        myImagenContacto.image = imagenContacto
+        
         // Do any additional setup after loading the view.
     }
 

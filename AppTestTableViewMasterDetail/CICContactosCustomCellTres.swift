@@ -1,5 +1,5 @@
 //
-//  CICContactosCustomCellTableViewCell.swift
+//  CICContactosCustomCellTres.swift
 //  AppTestTableViewMasterDetail
 //
 //  Created by cice on 13/1/17.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class CICContactosCustomCellTableViewCell: UITableViewCell {
+class CICContactosCustomCellTres: UITableViewCell {
 
     //MARK: - IBOutlets
-    @IBOutlet weak var myNombreLabel: UILabel!
-    @IBOutlet weak var myApellidoLabel: UILabel!
-    @IBOutlet weak var myTelefonoLabel: UILabel!
-    @IBOutlet weak var myImagenContacto: UIImageView!
+    @IBOutlet weak var myImagen: UIImageView!
+    @IBOutlet weak var myNombreCompleto: UILabel!
+    
+    
     
     
     override func awakeFromNib() {
